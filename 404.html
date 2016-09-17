@@ -1,0 +1,12 @@
+---
+layout: index-material-sidebar-right
+title: Ooops!
+---
+<div class="error">
+    <p>URL <script type="text/javascript">document.write('<b>' + window.location.href + '</b>')</script> tidak ditemukan</p>
+    <p>Cek lagi URL ini</p>
+</div>
+
+{% for post in site.posts limit:4 %}
+    {% include article_index.html %}
+{% endfor %}
